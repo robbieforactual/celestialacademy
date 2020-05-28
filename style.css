@@ -1,3 +1,6 @@
+/* open source code for 'toast popup' by Acash -> https://codepen.io/acash/pen/vZKPbY */
+
+
 @-webkit-keyframes popup{
 	0%{ transform: scale(0); }
 	100% { transform: scale(1);}
