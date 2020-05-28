@@ -1,0 +1,365 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* clearfix opensource code taken from https://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+html {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  color: #202020;
+  font-family: Archivo, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4, h5, h6, ul, ol, p {
+  margin-top: 0;
+}
+
+h1 {
+  font-weight: 900;
+  margin-top: 0;
+
+}
+
+p {
+  line-height: 1.5;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+  color: #29569a;
+  text-decoration: underline;
+}
+
+
+.celestial-container {
+  padding: 0 1em;
+
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 996px;
+}
+
+
+
+nav {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav a, nav a:hover, nav a:active, nav a:visited {
+  text-decoration: none;
+}
+
+nav .navbox {
+  display: inline-block;
+  float: left;
+  font-size: 1.25em;
+  font-weight: 900;
+}
+
+nav .navbox a {
+  color: #202020;
+  display: block;
+  padding: 1em 0;
+}
+
+
+
+nav ul {
+  margin: 0 -1em;
+  padding: 0;
+  clear: both;
+
+}
+
+nav ul li {
+  border-bottom: 1px solid #202020;
+  text-align: center;
+}
+
+nav ul li a {
+  color: #202020;
+  display: block;
+  padding: .75em;
+}
+
+.cjja {
+  background: url("https://i.ibb.co/zn1jnVT/landingimagemain.jpg") no-repeat fixed center;
+  color: #fff;
+  background-size: cover;
+
+}
+
+
+.cjja .container {
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+}
+
+.cjja h1 {
+  font-size: 3em;
+  margin-bottom: .15em;
+  text-align: center;
+}
+
+.cjja .secondheading, .cjja .spanmain {
+  display: block;
+  text-align: center;
+}
+
+.cjja .secondheading {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-bottom: 1em;
+}
+
+.cjja .spanmain {
+  font-size: 4em;
+}
+
+.celestialjoin form {
+  padding: 1em;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px;
+}
+
+.celestialjoin form input, .celestialjoin form textarea {
+  display: block;
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+}
+
+.celestialjoin form textarea {
+  height: 6em;
+}
+
+.celestialjoin form input[type="submit"] {
+  background-color: #295699;
+  border-radius: 0;
+  color: #fff;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+
+/* cjja navigation from open-source code at https://css-tricks.com/the-shapes-of-css/ */
+
+.cjja .spanmain a {
+  display: inline-block;
+  text-decoration: none;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #fff;
+}
+
+.cjja .spanmain a:hover {
+  background-color: #295699;
+  border-radius: 100%;
+}
+
+.gymdesc .container, .whybjj .container, .celestialgymtour .container, .celestialjoin .container {
+  padding: 5em 0;
+}
+
+.gymdesc, .whybjj, .celestialgymtour, .celestialjoin {
+  text-align: center;
+}
+
+.gymdesc {
+  background-color: #17263d;
+  color: #fff;
+}
+
+.whybjj .whycols {
+  margin: 3em auto;
+  width: 100%;
+}
+
+.celestialgymtour {
+  background-color: #0f1f39;
+  color: #fff;
+}
+
+.gymtour .gymtour-image {
+  margin: 1em auto;
+  width: 100%;
+  background-color: #295699;
+  border-radius: 4px;
+  display: block;
+  height: auto;
+  padding: 5px;
+}
+
+.footer {
+  background-color: #0f1f39;
+  color:  #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.footer .container {
+  padding: 1em 0;
+}
+
+.footer a {
+  color: #fff;
+  margin-right: 1em;
+}
+
+.footer a:last-of-type {
+  margin-right: 0;
+}
+
+/* MEDIA QUERIES HERE */
+
+
+/* tablet */
+
+@media  (min-width: 768px) {
+
+
+
+  nav ul {
+    border: none;
+    clear: none;
+    display: inline-block !important;
+    float: right;
+    margin: 0;
+    padding: 25px 0;
+  }
+
+  nav ul li {
+    border: none;
+    display: inline-block;
+    float:left;
+    margin-right: 1.5em;
+  }
+
+
+
+  nav ul li:last-of-type {
+    margin-right: 0;
+
+  }
+
+  nav ul li a {
+    padding: 0;
+  }
+
+  .gymtour .gymtour-image {
+    float: left;
+    margin-right: 2.5%;
+    width: 31.6666666667%;
+  }
+
+  .gymtour .gymtour-image:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  .cjja h1 {
+    font-size: 6em;
+  }
+
+  .cjja .secondheading {
+    font-size: 3em;
+  }
+
+  .whybjj .whycols {
+    float: left;
+    margin: 2em 5% 0 0;
+    padding: 0 1em;
+    width: 30%;
+  }
+
+  .whybjj .whycols:last-of-type {
+    margin-right: 0;
+  }
+
+  .celestialjoin form {
+    padding: 3em 2em 2em;
+  }
+
+  .celestialjoin form input[type="submit"] {
+    padding: 1em 3em;
+    width: auto;
+  }
+
+  .celestialjoin form input.subform {
+    float: left;
+    margin-right: 2.5%;
+    width: 48.75%;
+  }
+
+  .celestialjoin form input.subform:nth-of-type(2n) {
+    margin-right: 0;
+  }
+
+  .celestialjoin form textarea {
+    height: 12em;
+  }
+
+}
+
+
+/* phone */
+
+@media (max-width: 375px) {
+  body {
+    padding-top: 50px;
+  }
+
+
+  /* .hamburger {
+    background-color: ;
+    border: 0
+
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+  } */
+
+  /* nav ul {
+    display: none;
+  } */
+
+
+
+}
+
+@media (max-height: 736px) {
+  body {
+    padding-top: 80px;
+  }
