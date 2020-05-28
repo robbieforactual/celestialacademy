@@ -60,7 +60,7 @@
                <input type="text" placeholder="Card Number" class="subform">
                <input type="text" placeholder="CCV Number" class="subform">
                <textarea placeholder="Upon joining you will receive a free Gi (jiu jitsu uniform) please include your size here [small, medium, large, xl etc]" id="message" name="message"></textarea>
-               <input type="submit" value="Subscribe" onclick="myFunction()">
+               <input type="submit" value="Subscribe" onclick="toast('Thank you for becoming a member of Celestial Jiu Jitsu Academy. We will send you a membership confirmation to your email shortly!')">
             </form>
          </div>
       </div>
@@ -105,6 +105,16 @@
             <a href="https://www.instagram.com/_robbieo/" target="_blank"><i class="fa fa-instagram"></i></a>
             <a href="mailto:celestialbjjacademy.gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
          </div>
+
+         <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
       </footer>
    </body>
 </html>
